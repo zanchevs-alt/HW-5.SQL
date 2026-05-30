@@ -38,3 +38,6 @@ WHERE d.name IS NULL OR c.model IS NULL;
 SELECT d.name, c.model, COALESCE(c.price, 0) AS price
 FROM drivers d
 FULL OUTER JOIN cars c ON d.car_id = c.id;
+
+-- 4.
+-- FULL OUTER JOIN
